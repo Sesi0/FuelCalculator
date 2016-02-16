@@ -56,8 +56,6 @@ public class MainFuelCalculator {
 		frame.setTitle(
 				"\u0413\u043E\u0440\u0438\u0432\u0435\u043D \u041A\u0430\u043B\u043A\u0443\u043B\u0430\u0442\u043E\u0440");
 		frame.setForeground(Color.LIGHT_GRAY);
-		frame.setIconImage(
-				Toolkit.getDefaultToolkit().getImage("D:\\Bobby's Projects\\Eclipse\\Fuel Calculator\\bin\\icon.png"));
 		frame.setBounds(100, 100, 319, 251);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -111,12 +109,12 @@ public class MainFuelCalculator {
 					distance = Float.parseFloat(userDistance.getText());
 					price = Float.parseFloat(userFuelPrice.getText());
 
-					tripCostLabel.setText("<html>Трябват Ви "
+					tripCostLabel.setText("<html>Г’Г°ГїГЎГўГ ГІ Г‚ГЁ "
 							+ String.format("%.2f", ((distance / (float) 100) * avrage))
-							+ " литра гориво.<br> Цената на пътуването Ви е "
-							+ String.format("%.2f", (((distance / (float) 100) * avrage) * price)) + " лева.</html>");
+							+ " Г«ГЁГІГ°Г  ГЈГ®Г°ГЁГўГ®.<br> Г–ГҐГ­Г ГІГ  Г­Г  ГЇГєГІГіГўГ Г­ГҐГІГ® Г‚ГЁ ГҐ "
+							+ String.format("%.2f", (((distance / (float) 100) * avrage) * price)) + " Г«ГҐГўГ .</html>");
 				} catch (Exception e1) {
-					JOptionPane.showMessageDialog(null, "Моля въведете валидно число!");
+					JOptionPane.showMessageDialog(null, "ГЊГ®Г«Гї ГўГєГўГҐГ¤ГҐГІГҐ ГўГ Г«ГЁГ¤Г­Г® Г·ГЁГ±Г«Г®!");
 
 				}
 			}
